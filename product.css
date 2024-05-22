@@ -1,0 +1,120 @@
+.navbar {
+    text-align: center;
+    padding: 10px;
+    color:black
+   
+}
+
+.navbar a{
+   float: center;
+    padding: 14px;
+    text-decoration: none;
+    color:black
+}
+.navbar a:hover{
+    color:red;
+}
+#Active{
+   
+    color: green;
+}
+.searchbar{
+    float: right;
+}
+.size img{
+    width: 40px;
+    height: 4x0px;
+  }
+.size :hover{
+    box-shadow: 1px 1px 1px 1px black ;
+    transform: translate(0px,-2px);
+}
+.product{
+    float: left;
+   width: 20%;
+   border-radius: 10px;
+   background-color: gray;  
+   margin:40px;
+   margin-right: 10px;
+   border: 1px solid black;
+   box-sizing: 2px 2px;
+   height: 350px;
+}
+.product:hover{
+    box-shadow: 2px 2px 2px 2px black ;
+    transform:translate(0px,-5px) ;
+   
+}
+.des a{
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    color: black;
+}
+.des a:hover{
+    color: white;
+}
+.pic img{
+    width: 100%;  
+    height:250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+body{
+    background-color: lightgrey;
+}
+.footerbox {
+    display: inline-block;
+    width: 20%;
+    margin: 2%
+}
+
+.footer {
+    padding-left: 10%;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.footer td {
+    padding-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/* copyright css */
+.copyright {
+    text-align: center;
+    padding: 1%;
+    font-size: 14px;
+}
+
+        .main {
+            margin-top: 70px;
+
+        }
+
+        .research {
+            width: 80%;
+            margin-left: 10%;
+            border: 2px solid black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .research img {
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .research p {
+            font-family: 'Times New Roman';
+            font-size: 17px;
+            text-align: center;
+        }

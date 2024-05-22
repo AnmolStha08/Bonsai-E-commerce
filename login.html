@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login/Signup Page</title>
+    <style>
+      /* Add styling to the page */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        width: 500px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-color: blue;
+    }
+
+    .btn {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .switch-form {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        cursor: pointer;
+    }
+    .submit{
+        text-decoration: none;
+        color: blue;
+       
+    }
+    </style>
+    <script>
+        function myFunction() {
+          alert("You are logged in");
+        }
+        </script>
+</head>
+<body>
+    
+    <div class="form-container">
+    <form id="login-form">
+        <h2>Login</h2>
+        <input type="text" class="form-control" placeholder="Username">
+        <input type="password" class="form-control" placeholder="Password">
+        <button onclick="myFunction()"><a class="submit" href="homepage.html">submit</a></button>
+        <p class="switch-form">Not a member yet? <span id="switch-to-signup">Signup</span></p>
+    </form>
+    <form id="signup-form" style="display:none;">
+        <h2>Signup</h2>
+        <input type="text" class="form-control" placeholder="Username">
+        <input type="password" class="form-control" placeholder="Password">
+        <input type="text" class="form-control" placeholder="Email">
+        <input type="submit" class="btn" value="Submit">
+        <p class="switch-form">Already a member? <span id="switch-to-login">Login</span></p>
+    </form>
+    </div>
+</body>
+
+<script>
+    // Added JavaScript function to toggle between forms
+    const loginForm = document.getElementById("login-form");
+    const signupForm = document.getElementById("signup-form");
+    const switchToLogin = document.getElementById("switch-to-login");
+    const switchToSignup = document.getElementById("switch-to-signup");
+
+    switchToSignup.addEventListener("click", () => {
+    loginForm.style.display = "none";
+    signupForm.style.display = "block";
+    });
+
+    switchToLogin.addEventListener("click", () => {
+    signupForm.style.display = "none";
+    loginForm.style.display = "block";
+    });
+</script>
+</html>
+

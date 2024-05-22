@@ -1,0 +1,92 @@
+.navbar {
+    text-align: center;
+    padding: 10px;
+    color:black
+   
+}
+
+.navbar a{
+   float: center;
+    padding: 14px;
+    text-decoration: none;
+    color:black
+}
+.navbar a:hover{
+    color:red;
+}
+#Active{
+   
+    color: green;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  header img {
+    border-radius: 18%;
+    margin-bottom: 1rem;
+    width: 150px;
+    height: 150px;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .about {
+    margin-bottom: 2rem;
+  }
+  
+  .projects {
+    margin-bottom: 2rem;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .project {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .project img {
+    width: 120px;
+    height: 80px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: rgb(136, 246, 11);
+  }
+  .contacts{
+    text-align: center;
+  }
